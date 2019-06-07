@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations;
-using UnityEngine.Timeline;
 using UnityEngine.SceneManagement;
 
 public class Bau : MonoBehaviour
 {
     public bool FaseComplete;
-
+    public LevelManager l;
     public Animator anim;
 
     private void Start() {
@@ -23,5 +22,10 @@ public class Bau : MonoBehaviour
                 anim.Play("BauAnimation");
             }
         }
+    }
+
+    public void telaWin(){
+        Time.timeScale = 0;
+        l.PanelsMenu[1].SetActive(true);
     }
 }
