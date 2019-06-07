@@ -21,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
 
     public Transform spawnPoint;
 
+    public LevelManager level;
+
     
 
     private void Awake() {
@@ -89,5 +91,10 @@ public class PlayerMovement : MonoBehaviour
 
     public void spawn(){
         transform.position = spawnPoint.position;
+        level.takeDamage();
+    }
+
+    public void TakeKey(){
+        level.addKey();
     }
 }
