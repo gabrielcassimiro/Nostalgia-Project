@@ -8,6 +8,11 @@ public class ScenesController : MonoBehaviour
     public string MenuName;
 
     public void goToMenu(){
-        SceneManager.LoadScene(MenuName);
+        SceneManager.LoadScene("menu");
+    }
+
+    public void GenericBros()
+    {
+        SceneManager.LoadScene("menuGeneric");
     }
 }
