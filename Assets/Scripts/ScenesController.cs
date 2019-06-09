@@ -15,4 +15,12 @@ public class ScenesController : MonoBehaviour
     {
         SceneManager.LoadScene("menuGeneric");
     }
+    public void Pong()
+    {
+        SceneManager.LoadScene("Pong Game");
+    }
+    public void Arkanoid()
+    {
+        SceneManager.LoadScene("Arkanoid");
+    }
 }
