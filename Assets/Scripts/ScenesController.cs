@@ -23,4 +23,8 @@ public class ScenesController : MonoBehaviour
     {
         SceneManager.LoadScene("Arkanoid");
     }
+    public void Menu()
+    {
+        SceneManager.LoadScene("menu");
+    }
 }
